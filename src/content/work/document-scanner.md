@@ -1,5 +1,5 @@
 ---
-title: Markdown Mystery Tour
+title: OpenCV Document Scanner
 publishDate: 2020-03-02 00:00:00
 img: /assets/images/doc-scanner.jpg
 img_alt: a personn scanning a document whith his phone
@@ -9,9 +9,6 @@ tags:
   - Document Scanner
   - Computer Vision
 ---
-
-
-## Document Scanner 
 
  ### Table of Contents
 
@@ -29,6 +26,8 @@ tags:
 ### Introduction  
 
 This Document Scanner project takes an image (supporting `.heic` format as well) as input, detects the document within the image, corrects its perspective, and produces a clean, scanned version of the document.  
+
+---
 
 ### Features  
 - **HEIC to PNG Conversion**: Converts HEIC format images to PNG for processing. 
@@ -54,15 +53,16 @@ This Document Scanner project takes an image (supporting `.heic` format as well)
 git clone [your-repository-link]
 ```
 
-1. Navigate to the project directory:
+2. Navigate to the project directory:
 ```bash
 cd [your-project-directory]
 ```
 
-1. Install the required dependencies:
+3. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
 ---
 
 ### Usage
@@ -85,18 +85,17 @@ The output will be saved in `./images/scanned_images/` with a prefix `scanned_`.
 4. **Perspective Transformation**: Using the detected contour, the image is warped to give a bird's-eye view of the document.
 5. **Thresholding**: A local threshold is applied to give the image a clean, scanned appearance.
 
----
 
 <details>
   <summary><b>Detailed Explanation</b></summary>
 
-#### 1. HEIC to PNG Conversion
+##### 1. HEIC to PNG Conversion
 
 In modern devices, especially Apple products, images can be saved in the `.heic` format, which provides high-quality images at nearly half the size of JPEG. This project has a built-in functionality to convert these `.heic` images to `.png` format, ensuring compatibility with a broader range of image processing tools and libraries.
 
 - **Function**: `convert_heic2png(args["image"])`
   
-#### 2. Edge Detection
+##### 2. Edge Detection
 
 Edge detection is a crucial step in the process to find the boundaries of the document within the image.
 
@@ -106,7 +105,7 @@ Edge detection is a crucial step in the process to find the boundaries of the do
 
 - **Canny Edge Detection**: The Canny function in OpenCV is then used to detect edges in the image. Two threshold values, 75 and 200 in this case, help in removing weak edges and preserving strong ones.
 
-#### 3. Finding the Contours
+##### 3. Finding the Contours
 
 The objective here is to detect the document's outline. The code is based on the hypothesis that the largest contour with exactly 4 edges is our document.
 
@@ -116,13 +115,13 @@ The objective here is to detect the document's outline. The code is based on the
 
 - **Polygon Approximation**: For each of these contours, a polygon approximation is performed. The purpose is to find a polygon that closely resembles the contour shape. We're particularly interested in contours that approximate to a polygon with 4 vertices (rectangle), suggesting a potential document.
 
-#### 4. Perspective Transformation
+##### 4. Perspective Transformation
 
 Once we have the document's four corners, we perform a perspective transformation to obtain a top-down, "bird's-eye view" of the document, as if it was scanned directly facing the scanner.
 
 - **Four-point Transform**: The custom function `four_point_transform` is used. This function takes the original image and the coordinates of the document's four corners to provide a warped version of the document.
 
-#### 5. Thresholding
+##### 5. Thresholding
 
 After obtaining a top-down view of the document, we want to enhance its readability and give it a "scanned" appearance.
 
