@@ -50,12 +50,12 @@ This Document Scanner project takes an image (supporting `.heic` format as well)
 
 1. Clone the repository: 
 ```bash 
-git clone [your-repository-link]
+git clone https://github.com/NueveCuatro/OpenCV-doc-scanner.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd [your-project-directory]
+cd openCV-doc-scanner
 ```
 
 3. Install the required dependencies:
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 To scan an image:
 ```bash
-python [script-name].py --image [path-to-input-image]
+python scan.py --image [path-to-input-image]
 ```
 
 
@@ -139,4 +139,4 @@ Contributions are welcome! Please ensure that you test your changes thoroughly b
 
 ### License
 
-This project is licensed under the [MIT License](https://chat.openai.com/c/link-to-license-file).
+This project is licensed under the MIT License.
