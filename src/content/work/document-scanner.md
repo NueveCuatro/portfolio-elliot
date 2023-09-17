@@ -1,3 +1,17 @@
+---
+title: Markdown Mystery Tour
+publishDate: 2020-03-02 00:00:00
+img: /assets/images/doc-scanner.jpg
+img_alt: a personn scanning a document whith his phone
+description: |
+The Document Scanner identifies and extracts documents from images, adjusts their perspective, and produces clear, scanned-like outputs using OpenCV. It also supports HEIC to PNG conversion.
+tags:
+  - OpenCV
+  - Document Scanner
+  - Computer Vision
+---
+
+
 # Document Scanner 
 
  ## Table of Contents
