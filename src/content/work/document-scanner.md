@@ -1,7 +1,7 @@
 ---
 title: OpenCV Document Scanner
 publishDate: 2020-03-02 00:00:00
-img: /assets/images/doc-scanner.jpg
+img: /assets/thumbnails/doc-scanner.jpg
 img_alt: a personn scanning a document whith his phone
 description: The Document Scanner identifies and extracts documents from images, adjusts their perspective, and produces clear, scanned-like outputs using OpenCV. It also supports HEIC to PNG conversion.
 tags:
@@ -19,7 +19,8 @@ tags:
 | 3. [Setup and Installation](#installation)          | Steps to set up and run the project.        |
 | 4. [Usage](#usage)                          | How to use the scanner and its features.    |
 | 5. [Detailed Explanation](#process) | In-depth look into the project's processes.  |
-| 6. [Contribution Guidelines](#contribution)  | How to contribute to the project.           |
+| 6. [Results](#results) | The results of the scanner on a document |
+| 7. [Contribution Guidelines](#contribution)  | How to contribute to the project.           |
 
 ---
 
@@ -130,6 +131,30 @@ After obtaining a top-down view of the document, we want to enhance its readabil
 - **Adaptive Thresholding**: Instead of a global thresholding value, an adaptive method called `threshold_local` from the `skimage` library is used. This method computes a threshold for small regions of the image, giving a more fine-tuned result. The method chosen is `gaussian` which provides a balanced thresholding.
 
 </details>
+
+---
+
+### Results
+
+##### Original Document:
+I aim to scan a document placed at an angle, making it challenging to read.
+<img src='/public/assets/images/doc-scanner3.png' alt="description 3" style="width: 50%;">
+
+
+##### Edge Detection and Contour Identification:
+The first step was to identify the document's boundaries to discern its shape and orientation.
+
+Subsequently, I mapped the contours of the document, which is pivotal for perspective correction.
+<div style="display: flex;">
+    <img src="/public/assets/images/doc-scanner1.png" alt="Description 1" style="width: 50%; margin-right: 10px;">
+    <img src="/public/assets/images/doc-scanner4.png" alt="Description 2" style="width: 50%;">
+</div>
+
+##### Resultant Scanned Image:
+After these steps, I applied a transformation, yielding a flat, readable, scanned-like output.
+<img src='/public/assets/images/doc-scanner2.png' alt="description 3" style="width: 40%;">
+
+
 
 ---
 

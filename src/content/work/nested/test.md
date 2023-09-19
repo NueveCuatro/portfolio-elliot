@@ -1,7 +1,7 @@
 ---
 title: Test for portfolio
 publishDate: 2020-03-04 00:00:00
-img: /assets/images/stock-3.jpg
+img: /assets/thumbnails/stock-3.jpg
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   This is a test to see if everything is working
