@@ -138,7 +138,7 @@ After obtaining a top-down view of the document, we want to enhance its readabil
 
 ##### Original Document:
 I aim to scan a document placed at an angle, making it challenging to read.
-<img src='/public/assets/images/doc-scanner3.png' alt="description 3" style="width: 50%;">
+<img src='/assets/images/doc-scanner3.png' alt="description 3" style="width: 50%;">
 
 
 ##### Edge Detection and Contour Identification:
@@ -146,13 +146,13 @@ The first step was to identify the document's boundaries to discern its shape an
 
 Subsequently, I mapped the contours of the document, which is pivotal for perspective correction.
 <div style="display: flex;">
-    <img src="/public/assets/images/doc-scanner1.png" alt="Description 1" style="width: 50%; margin-right: 10px;">
-    <img src="/public/assets/images/doc-scanner4.png" alt="Description 2" style="width: 50%;">
+    <img src="/assets/images/doc-scanner1.png" alt="Description 1" style="width: 50%; margin-right: 10px;">
+    <img src="/assets/images/doc-scanner4.png" alt="Description 2" style="width: 50%;">
 </div>
 
 ##### Resultant Scanned Image:
 After these steps, I applied a transformation, yielding a flat, readable, scanned-like output.
-<img src='/public/assets/images/doc-scanner2.png' alt="description 3" style="width: 40%;">
+<img src='/assets/images/doc-scanner2.png' alt="description 3" style="width: 40%;">
 
 
 
