@@ -9,9 +9,14 @@ import Hero from '../components/Hero.astro';
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			title="About"
+			tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
+			<div class="quote">
+				<q>I never lose, I either win or learn.</q>
+				<p>- Nelson Mandela</p>
+			</div>
+
 			<img
 			width="1553"
 			height="873"
@@ -131,6 +136,14 @@ import Hero from '../components/Hero.astro';
 		flex-direction: column;
 		gap: 3.5rem;
 	}
+
+	.quote{
+		padding-top: 2%;
+		font-size: xx-large;
+		font-style: italic;
+		font-weight: bold;
+	}
+	
 
 	img {
 		margin-top: 1.5rem;
