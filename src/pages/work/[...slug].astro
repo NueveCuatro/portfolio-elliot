@@ -85,8 +85,14 @@ const { Content } = await entry.render();
 		max-width: 54ch;
 	}
 
+	img{
+		max-width: 80%;
+		margin-inline: auto;
+	}
+
 	.content {
-		max-width: 65ch;
+		max-width: 80ch;
+		/* max-width: 80%; */
 		margin-inline: auto;
 	}
 
@@ -124,6 +130,10 @@ const { Content } = await entry.render();
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
 		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.back-link {
+		color: var(--accent-dark);
 	}
 
 	.back-link:hover,
