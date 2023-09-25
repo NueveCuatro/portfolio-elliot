@@ -35,7 +35,7 @@ While elevator buttons are generally good in terms of affordance, improvements c
 #### Bad Affordance: Public Restroom Faucets
 
 <div style='text-align: center;'>
-    <img src='/assets/images/HCI-lab-1/affordance.png' alt="violation of gestalt's law of proximity" style='width: 35%;'>
+    <img src='/assets/images/HCI-lab-1/bad-affordance.png' alt="violation of gestalt's law of proximity" style='width: 35%;'>
 </div>
 
 **Explanation:**
