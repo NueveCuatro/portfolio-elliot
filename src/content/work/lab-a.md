@@ -127,3 +127,55 @@ To promote transparency and user empowerment in this scenario, redesign the inte
 <u>Download Confirmation:</u> If there is a legitimate need to offer a download link, such as for an app or content related to the video, present it clearly and separately, not as a pop-up. Ask for explicit user consent before initiating any downloads.
 
 <u>Educational Prompts:</u> Display brief educational prompts that inform users about how to avoid unwanted downloads and stay safe online. These prompts can encourage users to be cautious when encountering download links.
+
+---
+
+### HCI Researcher:
+Dr. Hiroshi Ishii is a prominent researcher from the MIT Media Lab. As of my last update in 2022, he was known for his work on Tangible User Interfaces (TUI). His projects aimed to bridge the gap between the digital and physical worlds, allowing users to manipulate digital information through physical objects. An example is the "inFORM" project, which is a dynamic shape display that can render 3D content physically.
+
+---
+
+### Ivan Sutherland's "Ultimate Display":
+In his 1965 essay, Ivan Sutherland envisioned a room within which a computer can control the existence of matter, creating a "virtual world" inside the room that a person can interact with. Some of his predictions, like the idea of "virtual reality," where one can see and interact with virtual objects as if they're real, have indeed materialized. We have VR headsets like the Oculus Rift and HTC Vive achieving this. His mention of a computer-produced reality being indistinguishable from real reality is yet to be achieved to its fullest, but advancements in AR (Augmented Reality) are moving us closer. The future might bring more immersive haptic feedback systems, neural interfaces, or even a completely immersive environment like Sutherland's "room."
+
+---
+
+### Input Device - Microsoft's Kinect:
+The Kinect was an input device launched by Microsoft primarily for its Xbox gaming console. It's a Gesture-Based Interface and could recognize and interpret the physical gestures of players, translating them into in-game movements. Initially, it was met with enthusiasm due to its novel approach to gaming interaction. However, over time, the Kinect didn't succeed as hoped. One reason was the lack of precision in gesture recognition, leading to gameplay frustrations. Additionally, developers faced challenges in integrating gesture controls into traditional gaming genres effectively. While the technology had potential, the lack of compelling content and the rise of other immersive technologies (like VR) overshadowed the Kinect's unique offerings. However, elements of its technology live on in other domains, such as Windows Hello facial recognition.
+
+---
+
+### Evolution of Smartphone Shapes:
+Historically, smartphones have undergone significant shape changes driven by technological advancements and user preferences. Early mobile devices were bulky with physical keyboards (e.g., Nokia Communicators, BlackBerry). As touchscreen technology matured, phones shifted to the slate form factor we see today (e.g., iPhone, Samsung Galaxy). The main driving forces were maximizing screen real estate and the multifunctionality offered by touch interfaces. Recently, foldable and rollable screens are emerging, giving rise to devices that offer larger displays in compact forms (like Samsung's Galaxy Fold or LG's Rollable). The next step might be phones with truly flexible displays, allowing them to adapt to different form factors based on user needs. Wearable integration, where parts of the phone's functionality might shift to devices worn on the body, can also be a direction. These innovations will likely be driven by the continuous pursuit of convenience, multifunctionality, and aesthetic appeal.
+
+---
+
+### Mark Weiser's Ubiquitous Computing:
+Mark Weiser's vision of ubiquitous computing outlined a future where computing is seamlessly integrated into everyday objects and environments, making computers invisible yet omnipresent. We're certainly closer to this vision today. Smart homes with voice assistants like Alexa, wearable tech like smartwatches, and IoT (Internet of Things) devices show the permeation of computing into daily life. However, for a complete realization of Weiser's vision, challenges remain. We'd need even more seamless integration, interoperability among devices, advanced AI to predict and act upon user needs, and perhaps most importantly, robust privacy and security mechanisms. Ensuring the harmonious and ethically sound coexistence of tech and humanity is pivotal as we move towards a ubiquitously computed world.
+
+---
+
+### Future Appstore for MR HMDs:
+
+**MR Workspace:** An application that projects a fully interactive workspace (multiple screens, 3D project views) wherever you are. This will cater to professionals and students, providing flexibility in working or studying environments.
+
+<div style='display: flex; justify-content: center;'>
+    <img src='/assets/images/HCI-lab-1/MR-work.png' alt='cookie picture' style='width: 50%;'>
+    <img src='/assets/images/HCI-lab-1/MR-work2.png' alt='cookie picture' style='width: 50%; margin-left: 10px;'>
+</div>
+
+**Social MR Meet:** A mixed reality social interaction platform where users can virtually hang out, attend events, or even dates. Unlike current 2D platforms, this offers a spatial, almost real-life interaction feeling. It could redefine social media and networking in the MR era.
+
+<div style='display: flex; justify-content: center;'>
+    <img src='/assets/images/HCI-lab-1/MR-social.png' alt='cookie picture' style='width: 50%;'>
+    <img src='/assets/images/HCI-lab-1/MR-social2.png' alt='cookie picture' style='width: 50%; margin-left: 10px;'>
+</div>
+
+**Interactive Learning Modules:** Imagine exploring the pyramids of Egypt in 3D while learning history or visualizing complex mathematical problems. Such immersive learning experiences could revolutionize education.
+
+<div style='display: flex; justify-content: center;'>
+    <img src='/assets/images/HCI-lab-1/MR-learn.png' alt='cookie picture' style='width: 50%;'>
+    <img src='/assets/images/HCI-lab-1/MR-learn2.png' alt='cookie picture' style='width: 50%; margin-left: 10px;'>
+</div>
+
+These applications could be popular due to the blend of functionality, immersive experience, and the innate human desire for connectivity and knowledge. The success of MR text translation, as you mentioned, stems from its utility and the magic of seeing foreign text instantly transformed into understandable content, enhancing global interactions.
