@@ -21,6 +21,7 @@ tags:
 | 7. [Implementing the Mini-Map](#implementing-the-mini-map)      | Adding a top-down view of the game.         |
 | 8. [Winning the Game](#winning-the-game)                        | Displaying the player's progress and victory.|
 | 9. [Wrapping Up](#wrapping-up)                                  | Concluding the tutorial and next steps.     |
+| 10. [Adapting your game to VR](#Adapting-your-game-to-VR)                                  | See how you could adapt your game to VR     |
 
 ---
 
@@ -215,3 +216,66 @@ void SetCountText()
 Congratulations on building your Roll-a-Ball game with added features! This foundation sets the stage for more complex games. Experiment, iterate, and most importantly, have fun!
 
 This expanded tutorial now provides a more detailed walkthrough, including the mini-map addition. Remember to replace the "Insert Image" placeholders with relevant visuals to enhance the tutorial's clarity and appeal.
+
+---
+
+### Adapting your game to VR
+
+Adapting a Unity game like Roll-a-Ball to Virtual Reality (VR) involves several steps. Below is a step-by-step tutorial to guide you through the process. This tutorial assumes you have a basic understanding of Unity and have completed the Roll-a-Ball project or something similar.
+
+#### Prerequisites:
+- Unity Hub and Unity Editor installed (preferably the latest version)
+- A completed Roll-a-Ball project or similar
+- A VR headset compatible with Unity (e.g., Oculus Rift, HTC Vive)
+- VR SDKs installed (e.g., Oculus, OpenVR)
+
+#### Steps:
+1. Install VR Packages:
+Open your Roll-a-Ball project in Unity.
+Go to Window > Package Manager.
+Search for "XR Plugin Management" and install it.
+
+2. Enable XR Plugin Management:
+Go to Edit > Project Settings.
+In the Project Settings window, select XR Plugin Management.
+Check the box for your desired platform (Oculus, OpenVR, etc.).
+
+3. Update Camera:
+In the Unity hierarchy, find your Main Camera.
+Delete the Main Camera as we'll be using the VR camera rig.
+Import the VR camera rig related to your SDK (e.g., for Oculus, you might use the OVRCameraRig prefab).
+
+4. Update Player Controller:
+Attach your player control script (e.g., PlayerController) to the VR camera rig or one of its child objects.
+Update the script to use VR inputs. For example, you might use the thumbstick or touchpad to move the ball.
+
+```csharp
+void Update()
+{
+    // Example for Oculus Touch thumbstick
+    Vector2 thumbstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+    movementX = thumbstick.x;
+    movementY = thumbstick.y;
+    // ... (rest of your code)
+}
+```
+
+1. Test in VR:
+Save your scene and project.
+Put on your VR headset and make sure it's set up correctly.
+Press the Play button in Unity to test the game in VR.
+
+2. Fine-Tuning:
+You may need to adjust the scale and positioning of game objects to better suit the VR perspective.
+Test extensively to ensure that the controls feel intuitive and that the game is comfortable to play in VR.
+
+3. Build for VR:
+Go to File > Build Settings.
+Add your scenes and select your target platform.
+Click Build and follow the prompts to create a VR build of your game.
+
+<video controls width="100%">
+  <source src="/assets/images/HCI-roll-a-ball/roll-a-ball-vr.mp4" type="video/mp4">
+</video>
+
+And there you have it! You've adapted a basic Unity game for VR. This is a simplified guide, so you may encounter specific issues that require additional troubleshooting. Feel free to ask for further clarification or help on any of the steps

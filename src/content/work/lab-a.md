@@ -1,9 +1,9 @@
 ---
-title: HCI - Lab1
+title: HCI - Labs
 publishDate: 2020-03-02 00:00:00
 img: /assets/thumbnails/HCI-lab-1.png
 img_alt: a personn scanning a document whith his phone
-description: This is the blog entry for the lab 1 of HCI's course
+description: This blog covers the HCI labs and courses.
 tags:
   - HCI
   - Affordance
